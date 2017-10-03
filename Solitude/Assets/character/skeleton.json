@@ -1,0 +1,43 @@
+{
+"skeleton": { "hash": "nBbhwN1J8cMjll5r3WMye4k5WwU", "spine": "3.6.39", "width": 178.5, "height": 168.51, "images": "./images/" },
+"bones": [
+	{ "name": "root", "y": 7.29 },
+	{ "name": "cabeza-grande", "parent": "root", "length": 133.09, "rotation": 88.27, "x": -0.74, "y": 3.25 }
+],
+"slots": [
+	{ "name": "cabeza-grande", "bone": "cabeza-grande", "attachment": "cabeza-grande" },
+	{ "name": "eyes", "bone": "root", "attachment": "eyes" }
+],
+"skins": {
+	"default": {
+		"cabeza-grande": {
+			"cabeza-grande": { "x": 74.69, "y": 4.77, "rotation": -88.27, "width": 178, "height": 167 }
+		},
+		"eyes": {
+			"eyes": { "x": -3.75, "y": 76.54, "width": 178, "height": 167 }
+		}
+	}
+},
+"animations": {
+	"animation": {},
+	"idle": {
+		"slots": {
+			"eyes": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.7333, "name": "eyes" },
+					{ "time": 0.8, "name": "eyes" }
+				]
+			}
+		},
+		"bones": {
+			"cabeza-grande": {
+				"translate": [
+					{ "time": 0.3667, "x": 0.07, "y": 0.02 },
+					{ "time": 0.8667, "x": -0.01, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
