@@ -47,7 +47,7 @@ namespace Spine {
 		public ExposedList<int> ClippedTriangles { get { return clippedTriangles; } }
 		public ExposedList<float> ClippedUVs { get { return clippedUVs; } }
 
-		public bool IsClipping () { return clipAttachment != null; }
+		public bool IsClipping { get { return clipAttachment != null; } }
 
 		public int ClipStart (Slot slot, ClippingAttachment clip) {
 			if (clipAttachment != null) return 0;

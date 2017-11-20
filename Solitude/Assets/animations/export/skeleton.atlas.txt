@@ -1,0 +1,97 @@
+
+skeleton.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+head
+  rotate: false
+  xy: 490, 494
+  size: 516, 526
+  orig: 516, 526
+  offset: 0, 0
+  index: -1
+left arm
+  rotate: false
+  xy: 748, 299
+  size: 251, 67
+  orig: 251, 67
+  offset: 0, 0
+  index: -1
+left eye
+  rotate: true
+  xy: 794, 368
+  size: 64, 187
+  orig: 64, 187
+  offset: 0, 0
+  index: -1
+left foot
+  rotate: false
+  xy: 750, 238
+  size: 269, 59
+  orig: 269, 59
+  offset: 0, 0
+  index: -1
+left hand
+  rotate: false
+  xy: 794, 434
+  size: 218, 58
+  orig: 218, 58
+  offset: 0, 0
+  index: -1
+left leg
+  rotate: false
+  xy: 750, 169
+  size: 233, 67
+  orig: 233, 67
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 490, 257
+  size: 251, 78
+  orig: 251, 78
+  offset: 0, 0
+  index: -1
+right arm
+  rotate: false
+  xy: 2, 82
+  size: 344, 124
+  orig: 344, 124
+  offset: 0, 0
+  index: -1
+right eye
+  rotate: true
+  xy: 490, 337
+  size: 87, 256
+  orig: 87, 256
+  offset: 0, 0
+  index: -1
+right foot
+  rotate: false
+  xy: 490, 194
+  size: 258, 61
+  orig: 258, 61
+  offset: 0, 0
+  index: -1
+right hand
+  rotate: false
+  xy: 490, 426
+  size: 302, 66
+  orig: 302, 66
+  offset: 0, 0
+  index: -1
+right leg
+  rotate: false
+  xy: 2, 2
+  size: 281, 78
+  orig: 281, 78
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 2, 208
+  size: 486, 812
+  orig: 486, 812
+  offset: 0, 0
+  index: -1
