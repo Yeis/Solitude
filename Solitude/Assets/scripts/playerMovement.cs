@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+
+	void OnTriggerStay2D(Collider2D col){
+		if (col.gameObject.tag == "movement_cloud") {
+			Vector3 speed = col.gameObject.GetComponent<nube_movimiento> ().getSpeed ();
+			Vector2 gameObjectPosition = this.gameObject.transform.position;
+			this.gameObject.transform.position = new Vector2 (gameObjectPosition.x + (speed.x * Time.deltaTime), gameObjectPosition.y + (speed.y * Time.deltaTime));
+
+
+		}
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void OnTriggerExit2D(Collider2D col){
 	}
-}
+
+}	
