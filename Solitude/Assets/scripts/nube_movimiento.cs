@@ -49,7 +49,7 @@ public class nube_movimiento : MonoBehaviour {
 	}
 
 
-	public Vector3 getSpeed(){
+	public Vector2 getSpeed(){
 		return Speed;
 	}
 }

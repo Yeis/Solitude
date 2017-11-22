@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - movement_cloud
+  - circular_cloud
   layers:
   - Default
   - TransparentFX
