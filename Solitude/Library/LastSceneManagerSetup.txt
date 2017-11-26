@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/inHeaven.unity
-  isLoaded: 1
-  isActive: 1
