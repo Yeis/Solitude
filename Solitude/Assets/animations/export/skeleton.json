@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "o0UBa0rJAsJVgXn217js9ADq0mg", "spine": "3.6.47", "width": 859.84, "height": 1590.12 },
+"skeleton": { "hash": "H53INGDdIP2CdP4XGsAMUHOcGJc", "spine": "3.6.48", "width": 859.84, "height": 1590.12 },
 "bones": [
 	{ "name": "root" },
 	{ "name": "torso", "parent": "root", "length": 459.76, "rotation": 89.04, "x": -30.85, "y": 563.7 },
@@ -193,62 +193,52 @@
 			}
 		}
 	},
-	"falling": {
+	"fall": {
 		"bones": {
 			"left arm": {
 				"rotate": [
-					{ "time": 0, "angle": 67.31 },
-					{ "time": 0.6667, "angle": 86.18 }
+					{ "time": 0, "angle": 42.51 }
 				]
 			},
 			"left leg": {
 				"rotate": [
-					{
-						"time": 0,
-						"angle": 40.8,
-						"curve": [ 0, 0.61, 0.762, 0.67 ]
-					},
-					{ "time": 0.6667, "angle": 71.83 }
+					{ "time": 0, "angle": 70.12 }
 				]
 			},
 			"left foot": {
 				"rotate": [
-					{ "time": 0, "angle": -52.25 }
+					{ "time": 0, "angle": -38.85 }
 				]
 			},
 			"right leg": {
 				"rotate": [
-					{ "time": 0, "angle": -8.93 },
-					{ "time": 0.1667, "angle": -6.77 },
-					{ "time": 0.6667, "angle": 31.06 }
+					{ "time": 0, "angle": 16.81 }
 				]
 			},
 			"right arm": {
 				"rotate": [
-					{ "time": 0, "angle": -14.11 },
-					{ "time": 0.6667, "angle": -28.68 }
+					{ "time": 0, "angle": -38.67 }
+				],
+				"translate": [
+					{ "time": 0, "x": -45.52, "y": -0.77 }
 				]
 			},
 			"head": {
 				"rotate": [
-					{ "time": 0, "angle": 19.07 },
-					{ "time": 0.6667, "angle": -0.91 }
-				]
-			},
-			"torso": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.6667, "angle": -3.15 }
+					{ "time": 0, "angle": -6.75 }
 				],
 				"translate": [
-					{ "time": 0, "x": 0, "y": 28.42 }
+					{ "time": 0, "x": -15.09, "y": -4.98 }
+				]
+			},
+			"nose": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
 				]
 			},
 			"right foot": {
 				"rotate": [
-					{ "time": 0, "angle": 0, "curve": "stepped" },
-					{ "time": 0.1667, "angle": 0 },
-					{ "time": 0.6667, "angle": -26.48 }
+					{ "time": 0, "angle": -16.61 }
 				]
 			}
 		}
@@ -423,173 +413,47 @@
 			}
 		}
 	},
-	"jumping": {
+	"jump": {
 		"bones": {
 			"left arm": {
 				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.2667, "angle": -16.11 },
-					{ "time": 0.3667, "angle": 0 },
-					{ "time": 0.6667, "angle": 67.31 }
+					{ "time": 0, "angle": 67.31 }
 				]
 			},
 			"left leg": {
 				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.2667, "angle": 9.78 },
-					{ "time": 0.3667, "angle": 0 },
-					{ "time": 0.6667, "angle": 40.8 }
+					{ "time": 0, "angle": 68.69 }
 				]
 			},
 			"left foot": {
 				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.2667, "angle": -12.83 },
-					{ "time": 0.3667, "angle": 0 },
-					{ "time": 0.6667, "angle": -52.25 }
+					{ "time": 0, "angle": -77.23 }
 				]
 			},
 			"right leg": {
 				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.2667, "angle": 10.61 },
-					{ "time": 0.3667, "angle": 0 },
-					{ "time": 0.6667, "angle": -8.93 }
+					{ "time": 0, "angle": -8.93 }
 				]
 			},
 			"right arm": {
 				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.2667, "angle": 38.68 },
-					{ "time": 0.3667, "angle": 0 },
-					{ "time": 0.6667, "angle": -14.11 }
-				]
-			},
-			"head": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.2667, "angle": -12.42 },
-					{ "time": 0.3667, "angle": 0 },
-					{ "time": 0.6667, "angle": 19.07 }
-				]
-			},
-			"right foot": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.2667, "angle": -14.39 },
-					{ "time": 0.3667, "angle": 0 }
-				]
-			},
-			"nose": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.2667, "angle": -2.61 },
-					{ "time": 0.3667, "angle": 0 }
-				]
-			},
-			"left hand": {
-				"rotate": [
-					{ "time": 0.2667, "angle": 12.67 },
-					{ "time": 0.3667, "angle": 0 }
-				]
-			},
-			"right hand": {
-				"rotate": [
-					{ "time": 0.2667, "angle": 13.89 },
-					{ "time": 0.3667, "angle": 0 }
-				]
-			},
-			"torso": {
-				"rotate": [
-					{ "time": 0, "angle": 0 }
-				]
-			}
-		}
-	},
-	"jumping2": {
-		"bones": {
-			"left arm": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.1, "angle": -16.11 },
-					{ "time": 0.2, "angle": 0 },
-					{ "time": 0.5, "angle": 67.31 }
-				]
-			},
-			"left leg": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.1, "angle": 9.78 },
-					{ "time": 0.2, "angle": 0 },
-					{ "time": 0.5, "angle": 40.8 }
-				]
-			},
-			"left foot": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.1, "angle": -12.83 },
-					{ "time": 0.2, "angle": 0 },
-					{ "time": 0.5, "angle": -52.25 }
-				]
-			},
-			"right leg": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.1, "angle": 10.61 },
-					{ "time": 0.2, "angle": 0 },
-					{ "time": 0.5, "angle": -8.93 }
-				]
-			},
-			"right arm": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.1, "angle": 38.68 },
-					{ "time": 0.2, "angle": 0 },
-					{ "time": 0.5, "angle": -14.11 }
-				]
-			},
-			"head": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.1, "angle": -12.42 },
-					{ "time": 0.2, "angle": 0 },
-					{ "time": 0.5, "angle": 19.07 }
-				]
-			},
-			"right foot": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.1, "angle": -14.39 },
-					{ "time": 0.2, "angle": 0 }
-				]
-			},
-			"nose": {
-				"rotate": [
-					{ "time": 0, "angle": 0 },
-					{ "time": 0.1, "angle": -2.61 },
-					{ "time": 0.2, "angle": 0 }
-				]
-			},
-			"left hand": {
-				"rotate": [
-					{ "time": 0.1, "angle": 12.67 },
-					{ "time": 0.2, "angle": 0 }
-				]
-			},
-			"right hand": {
-				"rotate": [
-					{ "time": 0.1, "angle": 13.89 },
-					{ "time": 0.2, "angle": 0 }
-				]
-			},
-			"torso": {
-				"rotate": [
-					{ "time": 0, "angle": 0 }
+					{ "time": 0, "angle": -14.11 }
 				],
 				"translate": [
-					{ "time": 0, "x": 0, "y": 0 },
-					{ "time": 0.1, "x": 0, "y": -28.42 },
-					{ "time": 0.5, "x": 0, "y": 28.42 }
+					{ "time": 0, "x": -45.52, "y": -0.77 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{ "time": 0, "angle": 19.07 }
+				],
+				"translate": [
+					{ "time": 0, "x": -14.79, "y": -23.02 }
+				]
+			},
+			"nose": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
 				]
 			}
 		}

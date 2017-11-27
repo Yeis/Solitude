@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Spine.Unity;
 
-public class PlayerAnimationController : MonoBehaviour {
-
+public class PlayerAnimationController : MonoBehaviour
+{
 	private Rigidbody2D rigidBody;
 	private SkeletonAnimation skeletonAnimation;
 
@@ -27,31 +27,50 @@ public class PlayerAnimationController : MonoBehaviour {
 		get { return rigidBody.velocity.x != 0f; }
 	}
 
-	void Awake()
+	private void Awake()
 	{
-		this.rigidBody = GetComponent<Rigidbody2D> ();
-		this.skeletonAnimation = GetComponentInChildren<SkeletonAnimation> ();
-		this.skeletonAnimation.SkeletonDataAsset.defaultMix = defaultMix;
+        rigidBody = GetComponent<Rigidbody2D> ();
+        skeletonAnimation = GetComponentInChildren<SkeletonAnimation> ();
+		skeletonAnimation.SkeletonDataAsset.defaultMix = defaultMix;
 	}
 
 	// Use this for initialization
-	void Start ()
+	private void Start ()
 	{
 		
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	private void Update ()
 	{
-		if (IsMoving)
+        if (IsJumping)
+        {
+            SetAnimation("jump", 1f, false);
+        }
+        else if (IsFalling)
+        {
+            SetAnimation("fall", 1f, false);
+        }
+		else if (IsMoving)
 		{
-			skeletonAnimation.AnimationName = "run";
-			skeletonAnimation.timeScale = runAnimationScale;
+            SetAnimation("run", runAnimationScale, true);
 		} 
 		else
 		{
-			skeletonAnimation.AnimationName = "idle";
-			skeletonAnimation.timeScale = idleAnimationScale;
+            SetAnimation("idle", idleAnimationScale, true);
 		}
 	}
+
+    /// <summary>
+    /// Sets the currently playing animation
+    /// </summary>
+    /// <param name="animationName"></param>
+    /// <param name="timeScale"></param>
+    /// <param name="loop"></param>
+    private void SetAnimation(string animationName, float timeScale, bool loop)
+    {
+        skeletonAnimation.AnimationName = animationName;
+        skeletonAnimation.timeScale = timeScale;
+        skeletonAnimation.loop = loop;
+    }
 }

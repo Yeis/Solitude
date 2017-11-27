@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2888ad295f231492d9c67d24328f167f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultMix: 1
+  defaultMix: 0.2
   idleAnimationScale: 1
   runAnimationScale: 3
 --- !u!114 &15570299
