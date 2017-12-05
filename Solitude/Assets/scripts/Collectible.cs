@@ -13,4 +13,12 @@ public class Collectible : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	void OnTriggerStay2D(Collider2D other) {
+		Debug.Log ("The player is on the platfoem");
+	}
+
+	void OnTriggerExit2D(Collider2D other){
+		Debug.Log ("The player is leaving");
+	}
 }

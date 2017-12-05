@@ -17,7 +17,7 @@ public class playerMovement : MonoBehaviour {
 			Debug.Log ("Detecting Circular Cloud with Speed: X: " + speed.x + "Y:  " + speed.y);
 			this.gameObject.transform.position = new Vector2 (gameObjectPosition.x + (speed.x * Time.deltaTime), gameObjectPosition.y + (speed.y * Time.deltaTime));
 		} else if (col.gameObject.tag == "collectible") {
-		
+			Destroy(col.gameObject);
 		}
 
 	}
