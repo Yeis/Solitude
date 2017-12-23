@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour {
 
@@ -20,6 +21,8 @@ public class playerMovement : MonoBehaviour {
 			// this.gameObject.transform.position = new Vector2 (gameObjectPosition.x + (speed.x * Time.deltaTime), gameObjectPosition.y + (speed.y * Time.deltaTime));
 		} else if (col.gameObject.tag == "collectible") {
 			Destroy(col.gameObject);
+		} else if(col.gameObject.tag == "boundary"){
+			SceneManager.LoadScene("inHeaven");
 		}
 	}
 	void OnTriggerExit2D(Collider2D col){

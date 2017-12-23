@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/inHeaven.unity
+    guid: 97ebf9d90a05f48a98a1d22bd71610af
+  - enabled: 1
+    path: Assets/inHell.unity
+    guid: c4c4ecb6efee84b278e217107ad0106a

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collectible : MonoBehaviour {
 
@@ -15,7 +16,11 @@ public class Collectible : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
-		Debug.Log ("The player is on the platfoem");
+		if(this.gameObject.name == "Recuerdo_Transportador_1"){
+			SceneManager.LoadScene("inHell");
+		}
+
+		Debug.Log ("The player is on the collectible");
 	}
 
 	void OnTriggerExit2D(Collider2D other){

@@ -8,6 +8,7 @@ public class Circular_Movement : MonoBehaviour {
 	public float currentAngle= 0f; //Our angle, this public for debugging purposes
 	private float speed = 0f;      //Rate at which we'll move around the circumference of the circle
 	public float timeToCompleteCircle = 1.5f; //Time it takes to complete a full circle
+	public bool clockwise =  false; 
 	Vector2 speedVector;
 
 
@@ -21,12 +22,17 @@ public class Circular_Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		speed = (Mathf.PI * 2) / timeToCompleteCircle; 
+
 		currentAngle += Time.deltaTime * speed; //Changes the angle 
 		float newX =  radius * 	Mathf.Cos (currentAngle);
 		float newY = radius * Mathf.Sin (currentAngle);
 		speedVector = new Vector2 (newX, 0f);
 //		speedVector = new Vector2 (0.0f, 0.0f);
-		this.transform.position = new Vector3 (newX, newY, this.transform.position.z);
+		if(clockwise){
+			this.transform.position = new Vector3 (this.transform.position.x - newX, this.transform.position.y - newY, this.transform.position.z);
+		}else{
+			this.transform.position = new Vector3 (this.transform.position.x + newX, this.transform.position.y + newY, this.transform.position.z);
+		}
 	}
 
 
