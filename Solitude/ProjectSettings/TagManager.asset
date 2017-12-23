@@ -6,6 +6,7 @@ TagManager:
   tags:
   - movement_cloud
   - circular_cloud
+  - collectible
   layers:
   - Default
   - TransparentFX
