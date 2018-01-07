@@ -2283,6 +2283,11 @@ Prefab:
       propertyPath: clockwise
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114307595916320694, guid: a2bd1f1a3a817445db7ab93b88e69ebd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a2bd1f1a3a817445db7ab93b88e69ebd, type: 2}
   m_IsPrefabParent: 0
@@ -3498,11 +3503,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4821880914221104, guid: da4477df0a61a4b19ba0dd3c07362f53, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4821880914221104, guid: da4477df0a61a4b19ba0dd3c07362f53, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 14.35
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 4821880914221104, guid: da4477df0a61a4b19ba0dd3c07362f53, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3612,6 +3617,25 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1707714807 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1466842474970214, guid: a2bd1f1a3a817445db7ab93b88e69ebd,
+    type: 2}
+  m_PrefabInternal: {fileID: 994982302}
+--- !u!114 &1707714813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1707714807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80bec213dbe94338b39e77f86c71d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateSpeed: 5
+  Radius: 0.1
+  _angle: 0
 --- !u!1 &1718211103
 GameObject:
   m_ObjectHideFlags: 0
