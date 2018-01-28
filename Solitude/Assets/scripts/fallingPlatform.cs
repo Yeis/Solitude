@@ -21,7 +21,7 @@ public class fallingPlatform : MonoBehaviour {
 	void Update () {
 		if(onPlatform){
 			timeToFall -= Time.deltaTime;
-			if(timeToFall < 0  && platformRigidBody.gravityScale < maxGravitySpeed){
+			if(timeToFall < 0  && platformRigidBody.gravityScale < maxGravityScale){
 				platformRigidBody.gravityScale +=  Time.deltaTime;
 			}
 	}
