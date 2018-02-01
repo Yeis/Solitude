@@ -454,7 +454,7 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 512
-  raycastLength: 2
+  raycastLength: 436
   horizontalRayCount: 4
   verticalRayCount: 4
 --- !u!33 &980659342
@@ -513,6 +513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a8b04c9dd0a4f6db393aa63f3cb179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpHeight: 100
+  timeToJumpApex: 1.4
+  accelerationTimeAirborne: 0.2
 --- !u!1 &1333720706
 GameObject:
   m_ObjectHideFlags: 0
