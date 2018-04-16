@@ -8,6 +8,7 @@ TagManager:
   - circular_cloud
   - collectible
   - boundary
+  - through
   layers:
   - Default
   - TransparentFX
